@@ -1,0 +1,22 @@
+#book {
+  perspective: 1500px;
+}
+
+#cover {
+  transform-origin: left;
+  backface-visibility: hidden;
+}
+
+#pages {
+  transform-origin: left;
+  backface-visibility: hidden;
+  z-index: 5;
+}
+
+#book.open #cover {
+  transform: rotateY(-180deg);
+}
+
+#book.open #pages {
+  transform: rotateY(0deg);
+}

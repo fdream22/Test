@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Journal</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-200">
+
+  <!-- Buku Jurnal -->
+  <div id="book" class="relative w-3/4 lg:w-1/2 h-3/4 bg-white shadow-xl overflow-hidden">
+    <div id="cover" class="absolute w-full h-full bg-gray-300 z-10 flex items-center justify-center cursor-pointer transition-transform transform rotate-y-0">
+      <h1 class="text-3xl font-bold text-gray-700">Selamat Ulang Tahun!</h1>
+    </div>
+
+    <!-- Halaman Buku -->
+    <div id="pages" class="relative h-full w-full transition-transform transform rotate-y-180">
+      <div class="flex items-center justify-between h-full p-4 bg-gray-100">
+        <!-- Halaman 1 -->
+        <div class="w-1/2 p-2">
+          <img src="images/profile1.jpg" alt="Gambar 1" class="rounded-lg shadow-lg">
+        </div>
+        <div class="w-1/2 p-2">
+          <h2 class="text-xl font-semibold mb-4">Ucapan 1</h2>
+          <p class="text-gray-700">Semoga tahun ini penuh dengan kebahagiaan, cinta, dan berkah. Selamat ulang tahun!</p>
+        </div>
+      </div>
+      
+      <div class="flex items-center justify-between h-full p-4 bg-gray-100">
+        <!-- Halaman 2 -->
+        <div class="w-1/2 p-2">
+          <img src="images/profile2.jpg" alt="Gambar 2" class="rounded-lg shadow-lg">
+        </div>
+        <div class="w-1/2 p-2">
+          <h2 class="text-xl font-semibold mb-4">Ucapan 2</h2>
+          <p class="text-gray-700">Semoga semua impianmu menjadi kenyataan, dan hidupmu dipenuhi dengan kebaikan. Selamat ulang tahun!</p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between h-full p-4 bg-gray-100">
+        <!-- Halaman 3 -->
+        <div class="w-1/2 p-2">
+          <img src="images/profile3.jpg" alt="Gambar 3" class="rounded-lg shadow-lg">
+        </div>
+        <div class="w-1/2 p-2">
+          <h2 class="text-xl font-semibold mb-4">Ucapan 3</h2>
+          <p class="text-gray-700">Hari ini adalah milikmu! Nikmati setiap momennya, dan jangan lupa untuk tersenyum. Selamat ulang tahun!</p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between h-full p-4 bg-gray-100">
+        <!-- Halaman 4 -->
+        <div class="w-1/2 p-2">
+          <img src="images/profile4.jpg" alt="Gambar 4" class="rounded-lg shadow-lg">
+        </div>
+        <div class="w-1/2 p-2">
+          <h2 class="text-xl font-semibold mb-4">Ucapan 4</h2>
+          <p class="text-gray-700">Selamat ulang tahun! Semoga tahun ini membawa lebih banyak petualangan dan kegembiraan dalam hidupmu.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between h-full p-4 bg-gray-100">
+        <!-- Halaman 5 -->
+        <div class="w-1/2 p-2">
+          <img src="images/profile5.jpg" alt="Gambar 5" class="rounded-lg shadow-lg">
+        </div>
+        <div class="w-1/2 p-2">
+          <h2 class="text-xl font-semibold mb-4">Ucapan 5</h2>
+          <p class="text-gray-700">Hari istimewa untuk orang istimewa! Semoga hari ini penuh dengan tawa dan kebahagiaan. Selamat ulang tahun!</p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between h-full p-4 bg-gray-100">
+        <!-- Halaman 6 -->
+        <div class="w-1/2 p-2">
+          <img src="images/profile6.jpg" alt="Gambar 6" class="rounded-lg shadow-lg">
+        </div>
+        <div class="w-1/2 p-2">
+          <h2 class="text-xl font-semibold mb-4">Ucapan 6</h2>
+          <p class="text-gray-700">Semoga setiap hari dalam hidupmu dipenuhi dengan cinta dan kebahagiaan. Selamat ulang tahun yang ke-6!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tombol Navigasi di Bawah -->
+  <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-4">
+    <button class="bg-gray-500 text-white font-bold py-2 px-4 rounded hover:bg-gray-700">...</button>
+    <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">Share</button>
+    <button class="bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700">Delete</button>
+    <button class="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700">Add Page</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
